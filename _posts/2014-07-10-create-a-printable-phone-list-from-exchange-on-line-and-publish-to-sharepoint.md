@@ -11,7 +11,7 @@ So what happens when your organization makes the move to on-premise stuff to clo
 
 Yes this is what we have to deal with sometimes. Here is one of those cases a simple phone list that can be printed out. 
 
-```` powershell
+``` powershell
 $LiveCred = Get-Credential
 
 $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ 
@@ -33,4 +33,4 @@ Get-Recipient -ResultSize Unlimited  | Sort-Object LastName | where {$_. Phone -
 select LastName ,FirstName, Phone,Department |
 ConvertTo-HTML -head $a -body "<H2 style='color: #08205C'>Phone List</H2><h4>Updated:$date </h4>" |
 Out-File \\<server>\<share>\PhoneList.htm 
-```` 
+``` 
