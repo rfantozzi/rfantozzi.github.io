@@ -1,0 +1,24 @@
+{{!< default}}
+<div id="main-content">
+    {{! The main content area on the homepage }}
+    <main class="body-content" role="main">
+        {{>filter-control}}
+        {{! Each post will be output using this markup }}
+        <div id="isotope-content">
+            {{#foreach posts}}
+            <div class="item-list {{post_class}}" {{#if tags}}data-tags="{{#foreach tags}}{{name}},{{/foreach}}"{{/if}} data-publish-date="{{published_at}}" data-title="{{title}}">
+                <div class="wrap">
+                    <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
+                    <div class="post-excerpt">
+                        {{content words="0"}} {{excerpt}} ... <a class="read-more" href="{{url}}">Read more »</a>
+                    </div>
+                    {{>home-meta-post}}
+                </div>
+            </div>
+            {{/foreach}}
+        </div>
+        {{#if pagination}}
+            {{pagination}}
+        {{/if}}
+    </main>
+</div>

@@ -1,0 +1,66 @@
+{{!< default}}
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+<div id="main-content">
+    <div class="post-header">
+        <div class="pull-left post-title">
+            <h2>{{{title}}}</h2>
+        </div>
+        <div class="pull-right post-tools page">
+            <div class="search-box">
+                <a id="btn-search" class="btn btn-theme">
+                    <span>Search</span> <i class="fa fa-search"></i>
+                </a>
+                <div class="search-form">
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="search-keyword" placeholder="Enter keyword"/>
+                        </div>
+                    </form>
+                    <div id="search-result"></div>
+                </div>
+            </div>
+            <div class="share-box">
+                <a id="btn-share" href="javascript:;" class="btn btn-theme">
+                    Share <span class="caret"></span>
+                </a>
+                <div class="share-box-content">
+                    <ul class="social active">
+                        <li class="twitter">
+                            <a href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="google">
+                            <a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Google">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{encode title}}&summary={{encode excerpt}}&source={{@blog.url}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="body-content" role="main">
+        <div class="post-wrap">
+            <article class="{{post_class}}">
+                <section class="post-content">
+                    {{content}}
+                </section>
+            </article>
+        </div>
+    </main>
+</div>
+{{/post}}

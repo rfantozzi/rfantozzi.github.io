@@ -1,0 +1,165 @@
+<aside id="main-sidebar" {{#if @blog.cover}} class="covered" style="background-image: url({{@blog.cover}})"{{/if}}>
+	<div class="logo-container">
+		{{! Begin Logo }}
+        {{#if @blog.logo}}
+        <a class="logo" href="{{@blog.url}}">
+			<img src="{{@blog.logo}}" alt="{{@blog.title}}" title="{{@blog.title}}"/>
+		</a>
+        {{else}}
+        <a class="logo text" href="{{@blog.url}}">
+            {{@blog.title}}
+        </a>
+        {{/if}}
+	</div>
+    <a id="mobile-menu" class="btn btn-theme collapsed" data-toggle="collapse" data-target=".main-nav">
+        <span>Navigation</span> <i class="fa fa-tasks"></i>
+    </a>
+	 <div class="intro">
+        <p>
+            {{@blog.description}}
+        </p>
+    </div>
+    <ul class="nav main-nav collapse navbar-collapse">
+        <!-- Begin menu item 1-->
+        <li class="active">
+            <!-- Keep href="{{@blog.url}}" for home page-->
+            <a href="{{@blog.url}}">
+                Home <!-- Change text of menu here-->
+            </a>
+        </li>
+        <!-- End menu item 1-->
+        <!-- Begin menu item 2-->
+        <li>
+            <!--
+                1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+                    Example: {{@blog.url}}/about-us/
+
+                2.  Change class="content-popup" to class="content-popup-ajax" If you want to display page content on Popup
+                    Change class="content-popup" to class="" If you want to display page content on standard page
+            -->
+            <a href="#about-us" class="content-popup">
+                About Us <!-- Change text of menu here-->
+            </a>
+        </li>
+        <!-- End menu item 2-->
+        <!-- Begin menu item 3-->
+        <li>
+            <!--
+                1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+                    Example: {{@blog.url}}/contact-us/
+
+                2.  Change class="content-popup" to class="content-popup-ajax" If you want to display page content on Popup
+                    Change class="" to class="" If you want to display page content on standard page
+            -->
+            <a href="#contact-us" class="content-popup">
+                Contact Us <!-- Change text of menu here-->
+            </a>
+        </li>
+        <!-- End menu item 3-->
+        <!-- Begin menu item 4-->
+        <li>
+            <!--
+                1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+                    Example: {{@blog.url}}/newsletter/
+
+                2.  Change class="content-popup" to class="content-popup-ajax" If you want to display page content on Popup
+                    Change class="content-popup" to class="" If you want to display page content on standard page
+            -->
+            <a href="#newsletter" class="content-popup">
+                Newsletter <!-- Change text of menu here-->
+            </a>
+        </li>
+        <!-- End menu item 4-->
+        <!-- Begin menu item 5-->
+        <li class="has-sub">
+            <!-- Keep href="#"-->
+            <a href="#">
+                Another Menu <!-- Change text of menu here-->
+                <span class="caret"></span> <!-- Keep this element -->
+            </a>
+            <ul class="dropdown-menu">
+                <!-- Begin sub menu item 1-->
+                <li>
+                    <!--
+                        1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+                            Example: {{@blog.url}}/contact-us/
+
+                        2.  Add class="content-popup-ajax" If you want to display page content on Popup
+                    -->
+                    <a href="#">
+                        I'm child menu item <!-- Change text of sub menu here-->
+                    </a>
+                </li>
+                <!-- End sub menu item 1-->
+                <!-- Begin sub menu item 2-->
+                <li>
+                    <!--
+                        1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+                            Example: {{@blog.url}}/contact-us/
+
+                        2.  Add class="content-popup-ajax" If you want to display page content on Popup
+                    -->
+                    <a href="#">
+                        I'm child menu item <!-- Change text of sub menu here-->
+                    </a>
+                </li>
+                <!-- End sub menu item 2-->
+                <!-- Begin sub menu item3-->
+                <li>
+                    <!--
+                        1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+                            Example: {{@blog.url}}/contact-us/
+
+                        2.  Add class="content-popup-ajax" If you want to display page content on Popup
+                    -->
+                    <a href="#">
+                        I'm child menu item <!-- Change text of sub menu here-->
+                    </a>
+                </li>
+                <!-- End sub menu item 3-->
+            </ul>
+        </li>
+        <!-- End menu item 5-->
+    </ul>
+	{{! Begin Social }}
+    <div class="bottom-social">
+        <ul class="social">
+            <li class="twitter">
+            	<a href="#" target="_blank" title="Twitter">
+            		<i class="fa fa-twitter"></i>
+            	</a>
+    		</li>
+            <li class="facebook">
+            	<a href="#" target="_blank" title="Facebook">
+            		<i class="fa fa-facebook"></i>
+            	</a>
+            </li>
+            <li class="google">
+			    <a href="#" target="_blank" title="Google">
+                	<i class="fa fa-google-plus"></i>
+                </a>
+            </li>
+            <li class="linkedin">
+            	<a href="#" target="_blank" title="Linkedin">
+            		<i class="fa fa-linkedin"></i>
+            	</a>
+            </li>
+            <li class="skype">
+            	<a href="#" target="_blank" title="Skype">
+            		<i class="fa fa-skype"></i>
+            	</a>
+            </li>
+            <li class="rss">
+            	<a href="/rss/" target="_blank" title="Rss Feed">
+            		<i class="fa fa-rss"></i>
+            	</a>
+            </li>
+        </ul>
+    </div>
+    {{! End Social }}
+	<div class="copyright">
+		Copyright &copy; 2014 <a href="/">{{@blog.title}}</a>
+        <br/>
+        All rights reserved.
+	</div>
+</aside>

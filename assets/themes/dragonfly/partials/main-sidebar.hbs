@@ -1,0 +1,121 @@
+<aside id="main-sidebar" {{#if @blog.cover}} class="covered" style="background-image: url({{@blog.cover}})"{{/if}}>
+	<div class="logo-container">
+		{{! Begin Logo }}
+        {{#if @blog.logo}}
+        <a class="logo" href="{{@blog.url}}">
+			<img src="{{@blog.logo}}" alt="{{@blog.title}}" title="{{@blog.title}}"/>
+		</a>
+        {{else}}
+        <a class="logo text" href="{{@blog.url}}">
+            {{@blog.title}}
+        </a>
+        {{/if}}
+	</div>
+    <a id="mobile-menu" class="btn btn-theme collapsed" data-toggle="collapse" data-target=".bottom-nav">
+        <i class="fa fa-tasks"></i>
+    </a>
+	<div class="intro">
+		<h5>
+            We Are A
+        </h5>
+        <div class="group">
+            <h2>
+               Complete
+            </h2>
+            <h3>
+                Ghost Theme
+            </h3>
+        </div>
+        <h4>
+            For Your Site
+        </h4>
+        <p>
+            You're in! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. Go ahead and edit this post to get going and learn how it all works! Getting Started Writing in markdown is really easy.
+        </p>
+	</div>
+	{{! Begin Social }}
+    <div class="bottom-social">
+        <ul class="social">
+            <li class="twitter">
+            	<a href="#" target="_blank" title="Twitter">
+            		<i class="fa fa-twitter"></i>
+            	</a>
+    		</li>
+            <li class="facebook">
+            	<a href="#" target="_blank" title="Facebook">
+            		<i class="fa fa-facebook"></i>
+            	</a>
+            </li>
+            <li class="google">
+			    <a href="#" target="_blank" title="Google">
+                	<i class="fa fa-google-plus"></i>
+                </a>
+            </li>
+            <li class="linkedin">
+            	<a href="#" target="_blank" title="Linkedin">
+            		<i class="fa fa-linkedin"></i>
+            	</a>
+            </li>
+            <li class="skype">
+            	<a href="#" target="_blank" title="Skype">
+            		<i class="fa fa-skype"></i>
+            	</a>
+            </li>
+            <li class="rss">
+            	<a href="/rss/" target="_blank" title="Rss Feed">
+            		<i class="fa fa-rss"></i>
+            	</a>
+            </li>
+        </ul>
+    </div>
+    {{! End Social }}
+	<ul class="bottom-nav collapse navbar-collapse">
+        <!-- Begin menu item 1-->
+        <li>
+            <!--
+                1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+                    Example: {{@blog.url}}/about-us/
+
+                2.  Change class="btn btn-theme content-popup" to class="btn btn-theme content-popup-ajax" If you want to display page content on Popup
+                    Change class="btn btn-theme content-popup" to class="btn btn-theme" If you want to display page content on standard page
+            -->
+            <a href="#about-us" class="btn btn-theme content-popup">
+                About Us <!-- Change Menu Text Here-->
+            </a>
+        </li>
+        <!-- End menu item 1-->
+        <!-- Begin menu item 2-->
+        <li>
+            <!--
+                1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+                    Example: {{@blog.url}}/contact-us/
+
+                2.  Change class="btn btn-theme content-popup" to class="btn btn-theme content-popup-ajax" If you want to display page content on Popup
+                    Change class="btn btn-theme content-popup" to class="btn btn-theme" If you want to display page content on standard page
+            -->
+            <a href="#contact-us" class="btn btn-theme content-popup">
+                Contact Us <!-- Change Menu Text Here-->
+            </a>
+        </li>
+        <!-- End menu item 2-->
+        <!-- Begin menu item 3-->
+        <li>
+            <!--
+                1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+                    Example: {{@blog.url}}/newsletter/
+
+                2.  Change class="btn btn-theme content-popup" to class="btn btn-theme content-popup-ajax" If you want to display page content on Popup
+                    Change class="btn btn-theme content-popup" to class="btn btn-theme" If you want to display page content on standard page
+            -->
+            <a href="#newsletter" class="btn btn-theme content-popup">
+                Newsletter <!-- Change Menu Text Here-->
+            </a>
+        </li>
+        <!-- End menu item 3-->
+    </ul>
+	<div class="copyright">
+		Copyright &copy; 2014 <a href="/">{{@blog.title}}</a>
+        <br/>
+        All rights reserved.
+	</div>
+</aside>

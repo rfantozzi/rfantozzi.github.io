@@ -15,7 +15,7 @@ Yes this is what we have to deal with sometimes. Here is one of those cases a si
     $LiveCred = Get-Credential
 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ 
--Credential $LiveCred -Authentication Basic -AllowRedirection
+    -Credential $LiveCred -Authentication Basic -AllowRedirection
 
     Import-PSSession $Session
 

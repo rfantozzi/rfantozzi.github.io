@@ -1,0 +1,202 @@
+::selection {
+	background: #008b8b;
+	color: #fff;
+}
+a:hover, a:focus{
+	color: #008b8b;
+}
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active,
+.btn-theme.active,
+.open .dropdown-toggle.btn-theme {
+	color: #008b8b;
+}
+.btn-theme:hover i,
+.btn-theme:focus i,
+.btn-theme:active i,
+.btn-theme.active i,
+.open .dropdown-toggle.btn-theme i{
+	color: #008b8b;
+}
+.btn-theme:hover span,
+.btn-theme:focus span,
+.btn-theme:active span,
+.btn-theme.active span,
+.open .dropdown-toggle.btn-theme span{
+	color: #008b8b;
+}
+.btn-theme:hover .caret,
+.btn-theme:focus .caret,
+.btn-theme:active .caret,
+.btn-theme.active .caret{
+	border-top-color: #008b8b;
+}
+.btn-theme-color {
+	background-color: #008b8b;
+}
+.btn-theme-color:hover,
+.btn-theme-color:focus,
+.btn-theme-color:active,
+.btn-theme-color.active,
+.open .dropdown-toggle.btn-theme-color {
+	background-color: #008b8b;
+}
+blockquote {
+	border-left-color:#008b8b;
+}
+blockquote.blockquote-reverse {
+	border-right-color: #008b8b;
+}
+.background-box {
+	background-color: #008b8b;
+}
+#more-info:hover:before{
+	border-left-color: #008b8b;
+}
+#main-sidebar{
+	background-color: #008b8b;
+}
+#main-sidebar.covered:after{
+	background-color: #008b8b;
+}
+#main-sidebar .main-nav > li.active a,
+#main-sidebar .main-nav > li:hover a,
+#main-sidebar .main-nav > li a:hover{
+	color: #008b8b;
+}
+#main-sidebar .main-nav > li.active > a > .caret,
+#main-sidebar .main-nav > li > a:hover .caret {
+	border-top-color: #008b8b;
+	border-bottom-color: #008b8b;
+}
+#main-sidebar .main-nav > li.has-sub>.dropdown-menu li.active a,
+#main-sidebar .main-nav > li.has-sub>.dropdown-menu li a:hover{
+	color: #008b8b;
+}
+.filter-control {
+	background-color: #008b8b;
+}
+.filter-control .filter-container .sort-option i {
+	color: #008b8b;
+}
+#isotope-content .item-list.featured:after {
+  	border-color: transparent #008b8b;
+}
+.gallery #isotope-content .item-list.featured:before {
+  	background-color: #008b8b;
+}
+.gallery #isotope-content .item-list.featured:after {
+  	border-color: transparent #008b8b;
+}
+.gallery #isotope-content .item-list.featured:hover:before,
+.gallery #isotope-content .item-list.featured.plain-text:before{
+	color: #008b8b;
+}
+.post .wrap .post-title a:hover{
+	color: #008b8b;
+}
+.post .wrap .post-photo .mask a.preview:hover,
+.post .wrap .post-photo .mask a.detail:hover {
+	border-color: #008b8b;
+}
+.post .wrap .post-photo .mask a.preview:hover i,
+.post .wrap .post-photo .mask a.detail:hover i{
+	color: #008b8b;
+}
+.post .wrap .post-excerpt a.read-more{
+	color:#008b8b;
+}
+.gallery .post .wrap .post-excerpt a.read-more:hover{
+	color: #008b8b;
+}
+.gallery .post .wrap .post-excerpt .mask{
+	background-color: rgba(0,139,139,0.85);
+}
+.post-content a{
+	color:#008b8b;
+}
+.flickr-feed li a:hover img{
+	border-color:#008b8b;
+}
+.instagram-feed li a:hover img{
+	border-color:#008b8b;
+}
+.dribbble-feed li a:hover img{
+	border-color:#008b8b;
+}
+.popup-container {
+    background: #008b8b;
+}
+.post-header{
+	background: #008b8b;
+}
+#turncomment:hover span{
+	color:#008b8b;
+}
+.post-template.opencomment #turncomment{
+	color: #008b8b;
+}
+.post-template.opencomment #turncomment i,
+.post-template.opencomment #turncomment span{
+	color: #008b8b;
+}
+.open-more-info #more-info:before{
+	border-left-color: #008b8b;
+}
+#main-sidebar .bottom-nav.in{
+	background: #008b8b;
+}
+#main-sidebar .main-nav.in{
+	background: #008b8b;
+}
+.service-item i {
+	color: #008b8b;
+}
+.progress.my-skill {
+	border-color: #008b8b;
+}
+.progress.my-skill .progress-bar {
+	background-color: #008b8b;
+}
+.testimonial .author .name {
+	color: #008b8b;
+}
+.intro-box .action-button .btn {
+	border-color: #008b8b;
+}
+.intro-box .action-button .btn i {
+	color: #008b8b;
+}
+.intro-box .action-button .btn:hover {
+	background-color: #008b8b;
+}
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+	background-color: #008b8b;
+	border-color: #008b8b;
+}
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+	background-color: #008b8b;
+	border-color: #008b8b;
+}
+.page .vcard .vcard-icon i {
+	color: #008b8b;
+}
+.search-box .search-form #search-result ul li:hover{
+	background-color: #008b8b;
+	border-bottom-color: #008b8b;
+}
+.drop-caps.color:first-letter {
+	color: #008b8b;
+}
+.drop-caps.style2:first-letter {
+	background-color: #008b8b;
+}

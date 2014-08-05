@@ -1,0 +1,42 @@
+{{#contentFor "customVersionClass"}}enable-filter{{/contentFor}}
+<div class="filter-control">
+    <div class="filter-container">
+        <div class="group filter-group">
+            <div class="input-group btn-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-filter"></i>
+                    <span>Filter by:</span>
+                </span>
+                <select id="filter" multiple="multiple"></select>
+            </div>
+        </div>
+        <div class="group sort-group">
+            <div class="input-group btn-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-sort-amount-desc"></i>
+                    <span>Sort by:</span>
+                </span>
+                <select id="sort">
+                    <option value="date" selected>Date</option>
+                    <option value="title">Title</option>
+                </select>
+            </div>
+        </div>
+        <a href="javascript:;" class="sort-option" data-sort="desc">
+            <i class="fa fa-long-arrow-down"></i>
+        </a>
+        <div class="search-box">
+            <a id="btn-search" class="btn btn-theme">
+                <span>Search</span> <i class="fa fa-search"></i>
+            </a>
+            <div class="search-form">
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="search-keyword" placeholder="Enter keyword"/>
+                    </div>
+                </form>
+                <div id="search-result"></div>
+            </div>
+        </div>
+    </div>
+</div>
