@@ -9,7 +9,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Rich Fantozzi
-tagline: Simple, Complicate, Complex or Chaos you pick
+tagline: Simple, Complicated, Complex or Chaos you pick
 author :
   name : Richard Fantozzi
   email : rfantozzi@gmail.com
@@ -115,7 +115,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : true
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:

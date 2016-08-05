@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{D4724E75-DA6B-4117-86B3-E6F22CA46D4E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Blog</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="assets\themes\dragonfly\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="assets\themes\dragonfly\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="assets\themes\dragonfly\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="assets\themes\dragonfly\assets\fonts\FontAwesome.otf" />
+    <None Include="assets\themes\dragonfly\default.hbs" />
+    <None Include="assets\themes\dragonfly\error.hbs" />
+    <None Include="assets\themes\dragonfly\index.hbs" />
+    <None Include="assets\themes\dragonfly\package.json" />
+    <None Include="assets\themes\dragonfly\page.hbs" />
+    <None Include="assets\themes\dragonfly\partials\about-us.hbs" />
+    <None Include="assets\themes\dragonfly\partials\comment-config.hbs" />
+    <None Include="assets\themes\dragonfly\partials\comment-form.hbs" />
+    <None Include="assets\themes\dragonfly\partials\contact-us.hbs" />
+    <None Include="assets\themes\dragonfly\partials\disqus-comment-config.hbs" />
+    <None Include="assets\themes\dragonfly\partials\disqus-comment-count.hbs" />
+    <None Include="assets\themes\dragonfly\partials\disqus-comment-form.hbs" />
+    <None Include="assets\themes\dragonfly\partials\facebook-comment-config.hbs" />
+    <None Include="assets\themes\dragonfly\partials\facebook-comment-count.hbs" />
+    <None Include="assets\themes\dragonfly\partials\facebook-comment-form.hbs" />
+    <None Include="assets\themes\dragonfly\partials\filter-control.hbs" />
+    <None Include="assets\themes\dragonfly\partials\googleplus-comment-config.hbs" />
+    <None Include="assets\themes\dragonfly\partials\googleplus-comment-count.hbs" />
+    <None Include="assets\themes\dragonfly\partials\googleplus-comment-form.hbs" />
+    <None Include="assets\themes\dragonfly\partials\home-meta-post.hbs" />
+    <None Include="assets\themes\dragonfly\partials\main-sidebar-style2.hbs" />
+    <None Include="assets\themes\dragonfly\partials\main-sidebar.hbs" />
+    <None Include="assets\themes\dragonfly\partials\more-info-sidebar.hbs" />
+    <None Include="assets\themes\dragonfly\partials\newsletter.hbs" />
+    <None Include="assets\themes\dragonfly\partials\pagination.hbs" />
+    <None Include="assets\themes\dragonfly\partials\widget-dribbble.hbs" />
+    <None Include="assets\themes\dragonfly\partials\widget-facebook-likebox.hbs" />
+    <None Include="assets\themes\dragonfly\partials\widget-flickr.hbs" />
+    <None Include="assets\themes\dragonfly\partials\widget-instagram.hbs" />
+    <None Include="assets\themes\dragonfly\partials\widget-recent-posts.hbs" />
+    <None Include="assets\themes\dragonfly\partials\widget-text.hbs" />
+    <None Include="assets\themes\dragonfly\partials\widget-tweets.hbs" />
+    <None Include="assets\themes\dragonfly\post.hbs" />
+    <None Include="assets\themes\dragonfly\tag.hbs" />
+    <None Include="changelog.md" />
+    <None Include="History.markdown" />
+    <None Include="index.md" />
+    <None Include="README.md" />
+    <None Include="_config.yml" />
+    <None Include="_drafts\jekyll-introduction-draft.md" />
+    <None Include="_includes\JB\analytics" />
+    <None Include="_includes\JB\analytics-providers\getclicky" />
+    <None Include="_includes\JB\analytics-providers\google" />
+    <None Include="_includes\JB\analytics-providers\mixpanel" />
+    <None Include="_includes\JB\analytics-providers\piwik" />
+    <None Include="_includes\JB\categories_list" />
+    <None Include="_includes\JB\comments" />
+    <None Include="_includes\JB\comments-providers\disqus" />
+    <None Include="_includes\JB\comments-providers\facebook" />
+    <None Include="_includes\JB\comments-providers\intensedebate" />
+    <None Include="_includes\JB\comments-providers\livefyre" />
+    <None Include="_includes\JB\liquid_raw" />
+    <None Include="_includes\JB\pages_list" />
+    <None Include="_includes\JB\posts_collate" />
+    <None Include="_includes\JB\setup" />
+    <None Include="_includes\JB\sharing" />
+    <None Include="_includes\JB\tags_list" />
+    <None Include="_includes\themes\bootstrap-3\settings.yml" />
+    <None Include="_includes\themes\tom\settings.yml" />
+    <None Include="_includes\themes\twitter\settings.yml" />
+    <None Include="_plugins\debug.rb" />
+    <None Include="_posts\2014-07-10-create-a-printable-phone-list-from-exchange-on-line-and-publish-to-sharepoint.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="archive.html" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\css\bs-sticky-footer.css" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\themes\bootstrap-3\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\themes\bootstrap-3\css\style.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\bootstrap-multiselect.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\bootstrap.min.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\corporate-blue.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\dark-slate-gray.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\default.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\dodger-blue.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\golden-rod.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\green.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\hot-pink.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\indian-red.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\medium-violet-red.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\muted-teal.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\orange.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\purple.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\sea-green.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\soft-green.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\colors\yellow.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\custom.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\font-awesome.min.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\magnific-popup.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\screen.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shCore.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shCoreDefault.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shCoreDjango.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shCoreEclipse.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shCoreEmacs.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shCoreFadeToGrey.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shCoreMDUltra.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shCoreMidnight.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shCoreRDark.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shThemeDefault.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shThemeDjango.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shThemeEclipse.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shThemeEmacs.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shThemeFadeToGrey.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shThemeMDUltra.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shThemeMidnight.css" />
+    <Content Include="assets\themes\dragonfly\assets\css\syntaxhighlighter\shThemeRDark.css" />
+    <Content Include="assets\themes\dragonfly\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\themes\dragonfly\assets\img\bg\put your pattern here.txt" />
+    <Content Include="assets\themes\dragonfly\assets\img\loading.gif" />
+    <Content Include="assets\themes\dragonfly\assets\js\bootstrap-multiselect.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\bootstrap.min.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\config.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\imagesloaded.pkgd.min.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jqBootstrapValidation.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jquery.easing.1.3.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jquery.fitvids.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jquery.flickr.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jquery.infinitescroll.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jquery.instagram.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jquery.isotope.min.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jquery.isotope.perfectmasonry.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jquery.nicescroll.min.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\jribbble.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\main.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\sscr.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shAutoloader.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushAppleScript.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushAS3.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushBash.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushColdFusion.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushCpp.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushCSharp.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushCss.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushDelphi.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushDiff.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushErlang.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushGroovy.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushJava.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushJavaFX.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushJScript.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushPerl.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushPhp.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushPlain.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushPowerShell.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushPython.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushRuby.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushSass.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushScala.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushSql.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushVb.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shBrushXml.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shCore.js" />
+    <Content Include="assets\themes\dragonfly\assets\js\syntaxhighlighter\shLegacy.js" />
+    <Content Include="assets\themes\tom\css\screen.css" />
+    <Content Include="assets\themes\tom\css\syntax.css" />
+    <Content Include="assets\themes\tom\images\rss.png" />
+    <Content Include="assets\themes\twitter\bootstrap\css\bootstrap.2.2.2.min.css" />
+    <Content Include="assets\themes\twitter\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\themes\twitter\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="assets\themes\twitter\css\style.css" />
+    <Content Include="atom.xml" />
+    <Content Include="categories.html" />
+    <Content Include="pages.html" />
+    <Content Include="rss.xml" />
+    <Content Include="sitemap.txt" />
+    <Content Include="tags.html" />
+    <Content Include="_includes\themes\bootstrap-3\default.html" />
+    <Content Include="_includes\themes\bootstrap-3\page.html" />
+    <Content Include="_includes\themes\bootstrap-3\post.html" />
+    <Content Include="_includes\themes\tom\default.html" />
+    <Content Include="_includes\themes\tom\page.html" />
+    <Content Include="_includes\themes\tom\post.html" />
+    <Content Include="_includes\themes\twitter\default.html" />
+    <Content Include="_includes\themes\twitter\page.html" />
+    <Content Include="_includes\themes\twitter\post.html" />
+    <Content Include="_layouts\default.html" />
+    <Content Include="_layouts\page.html" />
+    <Content Include="_layouts\post.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
